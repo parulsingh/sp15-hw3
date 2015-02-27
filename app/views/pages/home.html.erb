@@ -1,0 +1,20 @@
+<h1>Users</h1>
+<% @users.each do |user| %>
+    <li>
+      <p>Name: <%= user.username %> Age: <%= user.age %></p>
+
+    </li>
+  <% end %>
+<h1>Cats</h1>
+  <% @cats.each do |cat| %>
+    <li>
+      <%= cat.name %>
+    </li>
+  <% end %>
+<h1>Todos</h1>
+  <% @todos.each do |todo| %>
+    <li>
+    <p>Task: <%= todo.tasks %> </p> 
+    <p>Is it finished?:  <%= todo.finished %></p>	
+    </li>
+  <% end %>
